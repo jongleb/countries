@@ -1,0 +1,20 @@
+<div class="page-header">
+    <h1>{{vm.item.name}}<small> {{vm.item.subregion}}</small></h1>
+    <div ng-if="!vm.item" class="loader center-block"></div>
+    <div class="row">
+        <div class="well well-lg">
+            Capital - {{vm.item.capital}}
+        </div>
+        <div ng-if="vm.item.borders.length">
+            <h3>Borders:</h3>
+            <ul>
+                <li ng-repeat="border in vm.item.borders">{{border}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <h3>Regions countries</h3>
+        <countries-list region-mode="true"></countries-list>
+        <countries-pagination></countries-pagination>
+    </div>
+</div>

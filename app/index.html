@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <base href="/albums">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body ng-app="app">
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ui-view></div>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/AngularJS-Toaster/toaster.js"></script>
+<script src="app.js"></script>
+<script src="config.js"></script>
+<script src="constants.js"></script>
+<script src="core/core.module.js"></script>
+<script src="core/filters/start-from.js"></script>
+<script src="core/directives/bad-image.js"></script>
+<script src="layout/layout.module.js"></script>
+<script src="layout/controllers/layout.js"></script>
+<script src="countries/countries.module.js"></script>
+<script src="countries/config.route.js"></script>
+<script src="countries/controllers/countries-list.js"></script>
+<script src="countries/directives/countries-list.js"></script>
+<script src="countries/directives/pagination.js"></script>
+<script src="countries/directives/item.js"></script>
+<script src="countries/controllers/country-detail.js"></script>
+<script src="countries/services/countries-repository.js"></script>
+<script src="countries/services/countries-service.js"></script>
+</body>
+</html>

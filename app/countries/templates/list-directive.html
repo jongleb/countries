@@ -1,0 +1,6 @@
+<div class="list-group" ng-repeat="country in vm.data.list | startFrom: vm.startingItem() | limitTo: vm.perPage">
+    <a ui-sref="country({id:country.callingCodes[0]})" class="list-group-item active">
+        <h4 class="list-group-item-heading">{{country.name}}</h4>
+        <p class="list-group-item-text">{{country.nativeName}}</p>
+    </a>
+</div>
